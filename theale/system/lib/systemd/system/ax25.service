@@ -1,0 +1,13 @@
+[Unit]
+Description=Start up radio processes
+After=dev-tnc\x2d2m.device
+Requires=dev-tnc\x2d2m.device
+
+[Service]
+Type=oneshot
+ExecStart=/usr/sbin/startRadio.sh
+ExecStop=/usr/sbin/stopRadio.sh
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target

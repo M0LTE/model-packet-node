@@ -1,0 +1,9 @@
+# /etc/ax25/axports
+#
+# The format of this file is:
+#
+# name callsign speed paclen window description
+#
+
+2m      M0LTE-2         57600   200     7       2m
+4m      M0LTE-4         57600   150     7       4m

@@ -1,0 +1,8 @@
+# Create a handy symlink to make refering to NinoTNCs easier
+SUBSYSTEM=="tty", ATTRS{idVendor}=="04d8", ATTRS{idProduct}=="00dd", ATTRS{serial}=="0004012240", SYMLINK+="tnc-2m"
+SUBSYSTEM=="tty", ATTRS{idVendor}=="04d8", ATTRS{idProduct}=="00dd", ATTRS{serial}=="0004807594", SYMLINK+="tnc-4m"
+
+SUBSYSTEM=="tty", ENV{ID_PATH}=="pci-0000:00:14.0-usb-0:2.3:1.0", SYMLINK+="arduino"
+
+SUBSYSTEM=="tty", ENV{ID_PATH}=="pci-0000:00:14.0-usb-0:2.2:1.0", SYMLINK+="radio-2m"
+SUBSYSTEM=="tty", ENV{ID_PATH}=="pci-0000:00:14.0-usb-0:2.1:1.0", SYMLINK+="radio-4m"
