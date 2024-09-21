@@ -23,6 +23,7 @@ sudo python3 ./2221aTool.py enum-serial 1
 ```
 sudo apt install ax25-tools ax25-apps
 sudo setcap cap_net_raw=ep /usr/sbin/kissparms
+sudo setcap cap_net_raw=ep /usr/bin/axlisten
 
 echo 'export PATH=$PATH:/usr/sbin' >> ~/.bashrc
 ```
